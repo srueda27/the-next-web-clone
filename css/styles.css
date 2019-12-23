@@ -82,9 +82,6 @@ svg {
   color: #fff;
 }
 
-.big-images > h1 {
-}
-
 .big-images__item {
   height: 30vh;
   position: relative;
@@ -92,7 +89,9 @@ svg {
 
 .big-images__item header {
   position: absolute;
+  padding: 0 10px;
   bottom: 20px;
+  
 }
 
 .big-images__item header h1 {
@@ -102,6 +101,19 @@ svg {
 .big-images__link {
   height: 100%;
   width: 100%;
+  display: block;
+}
+
+.big-images__link--main {
+    background: linear-gradient(transparent, black), url(../images/cuantuum.jpg) 50%/100% no-repeat;
+}
+
+.big-images__link--item {
+    background: linear-gradient(transparent, black), url(../images/hacker.png) 50%/100% no-repeat;    
+}
+
+.big-images__link--item1 {
+    background: linear-gradient(transparent, black), url(../images/button.png) 50%/100% no-repeat;    
 }
 
 .big-images__link img {
@@ -109,21 +121,39 @@ svg {
   height: 100%;
 }
 
-.main {
+.big-images__item__main {
   grid-area: main;
 }
 
-.item {
+.big-images__item__item {
   grid-area: item;
 }
 
-.item1 {
+.big-images__item__item1 {
   grid-area: item1;
 }
 
 .big-images__item__list {
   display: flex;
+  margin-top: 8px;
+  font-size: 12px;
 }
+
+.big-images__item__list li {
+  margin-right: 5px;
+  line-height: 12px;
+}
+
+.big-images__item__list span {
+    position: relative;
+    bottom: 6px;        
+}
+
+.big-images__item__list svg {
+    position: relative;
+    bottom: 2px;        
+}
+
 /* #endregion main */
 
 /* #region media-queries */
