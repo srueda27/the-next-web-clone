@@ -1,11 +1,22 @@
 /* #region base */
 nav {
-  display: flex;
-  justify-content: space-between;
+  display: block;
+  width: 100%;
+  position: fixed;
 }
+
+.list-visibility {
+    display: none;
+}
+
 /* #endregion base */
 
 /* #region nav-bar */
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+}
+
 .logo {
   width: 106px;
   height: 48px;
@@ -28,30 +39,111 @@ nav {
   height: 48px;
   width: 48px;
   padding: 16px;
+  border-left: 1px solid #eee;
 }
 
 .icon {
-  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    no-repeat;
-  background-size: 1296px 1296px;
   width: 16px;
   height: 16px;
 }
 
-.search {
-  background-position: -848px -848px;
+.search svg {
+  width: 16px;
+  height: 16px;
 }
 
-.bars {
+.bar {
   background-color: #f42;
   display: block;
-  height: 2px;
   margin-top: 3px;
+  height: 2px;
   width: 20px;
+  position: relative;
+  left: -2px;
 }
 
-.main-list,
-.top-list {
-  display: none;
-}
 /* #endregion nav-bar */
+
+/* #region media-queries */
+@media only screen and (min-width: 810px) {
+    
+    /* #region nav-bar */
+    .visibility {
+        display: flex;
+    }
+
+    .nav-container {
+        display: grid;
+        grid-template-columns: 106px 1fr;
+        grid-template-rows: 32px 48px;
+        grid-template-areas: 
+        "top-list top-list"
+        "logo menu";
+    }
+    
+    .top-list {
+        grid-area: top-list;
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        padding: 0 20px;
+        font-size: 13px;
+        line-height: 32px;
+        color: #686666;
+        background-color: black;
+    }
+
+    .top-list ul {
+        display: flex;
+    }
+    
+    .top-list ul li {
+        margin-right: 15px;
+    }
+    
+    .logo {
+        grid-area: logo;
+    }
+
+    .search-menu {
+        grid-area: menu;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main-list {
+        display: flex;
+        padding: 0 20px;
+        text-transform: capitalize;
+        font-size: 14px;
+        line-height: 48px;
+        color: gray;
+    }
+
+    .main-list li {
+        margin-right: 15px;
+    }
+
+    .bars {
+        display: none;
+    }
+    /* #endregion nav-bar */
+
+}
+
+@media only screen and (min-width: 1024px) {
+    /* #region nav-bar */
+    .logo {
+        display: none;
+    }
+
+    .nav-container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "top-list"
+        "menu";
+    }
+    /* #endregion nav-bar */
+
+}
+/* #endregion media-queries */
