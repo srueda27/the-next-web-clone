@@ -4,6 +4,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 1;
+  box-shadow: 0 8px 50px rgb(236, 233, 233);
   background-color: #fff;
 }
 
@@ -71,6 +72,8 @@ svg {
 /* #endregion nav-bar */
 
 /* #region main */
+
+/* #region big-images */
 .big-images {
   display: grid;
   grid-gap: 8px;
@@ -80,7 +83,6 @@ svg {
     "item1";
   width: 100%;
   padding: 8px;
-  box-shadow: 0 8px 50px rgb(236, 233, 233) inset;
   color: #fff;
   position: relative;
 }
@@ -176,6 +178,119 @@ svg {
   bottom: 2px;
 }
 
+/* #endregion big-images */
+
+/* #region wrapper */
+.wrapper {
+    max-width: 1192px;
+    padding: 0 20px;
+}
+
+/* #region latest-news */
+.latest_articles{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(235px,1fr));
+}
+
+.latest > h2 {
+    color: rgb(255, 68, 34);
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
+.latest__article {
+    display: grid;
+    padding: 10px 0;
+    grid-template-columns: 75px 1fr;
+    grid-gap: 8px;
+    grid-template-areas: 
+    "img title"
+    "img author-date";
+}
+
+.latest__article__img {
+    width: 75px;
+    height: 75px;
+    grid-area: img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.latest__article__img a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.latest__article:nth-of-type(1) .latest__article__img {
+    background-image: url(../images/TNWDeals.jpg);
+}
+
+.latest__article:nth-of-type(2) .latest__article__img {
+    background-image: url(../images/David_Canellis.jpg);
+}
+
+.latest__article:nth-of-type(3) .latest__article__img {
+    background-image: url(../images/Yessi_Bello_Perez.jpg);
+}
+
+.latest__article:nth-of-type(4) .latest__article__img {
+    background-image: url(../images/UAE.jpg);
+}
+
+.latest__article:nth-of-type(5) .latest__article__img {
+    background-image: url(../images/tiktok.png);
+}
+
+.latest__article:nth-of-type(6) .latest__article__img {
+    background-image: url(../images/radiohead.jpg);
+}
+
+.latest__article:nth-of-type(7) .latest__article__img {
+    background-image: url(../images/Aeon.png);
+}
+
+.latest__article:nth-of-type(8) .latest__article__img {
+    background-image: url(../images/Oleb.png);
+}
+
+.latest__article__title {
+    grid-area: title;
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+
+.latest__article__title a {
+    text-decoration: none;
+    color: black;
+}
+
+.latest__article__author-date {
+    grid-area: author-date;
+    justify-self: left;
+    display: flex;
+    font-size: 12px;
+    color: gray;
+}
+
+.latest__article__author-date a {
+    text-decoration: none;
+    color: gray;
+}
+
+.latest__article__author-date li:nth-of-type(2)::before {
+    content: "\B7";
+    margin-left: 5px;
+}
+
+/* #endregion latest-news */
+
+/* #endregion wrapper */
+
 /* #endregion main */
 
 /* #region media-queries */
@@ -184,7 +299,7 @@ svg {
         padding-top: 80px;
     }
 
-    /* #region nav-bar */
+  /* #region nav-bar */
   .visibility {
     display: flex;
   }
@@ -266,6 +381,28 @@ svg {
   }
 
   /* #endregion big-images */
+  
+  /* #region main */
+
+  /* #region latest-news */
+  .latest__article {
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(150px, 1fr) auto;
+    grid-template-areas: 
+    "img" 
+    "title"
+    "author-date";
+  }
+
+  .latest__article__img {
+    width: 100%;
+    height: 100%;
+    grid-area: img;
+  }
+  /* #endregion latest-news */
+
+  /* #endregion main */
+
 }
 
 @media only screen and (min-width: 1024px) {
