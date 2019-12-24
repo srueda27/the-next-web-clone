@@ -95,6 +95,11 @@ svg {
   position: relative;
 }
 
+.big-images__item__main--date,
+.gradient {
+    display: none;
+}
+
 .big-images__item header {
   position: absolute;
   padding: 0 10px;
@@ -291,11 +296,22 @@ svg {
 
   .gradient {
     background: url(../images/tnw.svg) 20px 20px/50% no-repeat,  
-        transparent url(../images/cover_gradient.png) no-repeat;
+        transparent url(../images/cover_gradient.png) 0/100% 100% no-repeat;
+    display: block;
     height: 100%;    
     position: absolute;
     width: 100%;
     top: 0;
+  }
+
+  .big-images__item__main--date {
+    display: block;
+    position: absolute;
+    width: 100%;
+    font-size: 14px;
+    text-align: right;
+    top: 18px;
+    right: 20px;
   }
 
   .big-images__item__list--hide-share li:last-child {
