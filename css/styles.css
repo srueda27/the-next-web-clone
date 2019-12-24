@@ -168,7 +168,11 @@ svg {
 
 /* #region media-queries */
 @media only screen and (min-width: 810px) {
-  /* #region nav-bar */
+    main {
+        padding-top: 80px;
+    }
+
+    /* #region nav-bar */
   .visibility {
     display: flex;
   }
