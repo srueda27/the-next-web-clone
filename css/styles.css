@@ -184,6 +184,7 @@ svg {
 .wrapper {
     max-width: 1192px;
     padding: 0 20px;
+    margin: 0 auto;
 }
 
 /* #region latest-news */
