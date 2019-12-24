@@ -176,6 +176,13 @@ svg {
 }
 
 /* #region latest-news */
+.latest > h2 {
+    color: rgb(255, 68, 34);
+    font-family: 'Poppins', sans-serif;
+    font-size: 28px;
+    font-weight: bolder;
+}
+
 .latest__article {
     display: grid;
     padding: 10px 0;
@@ -214,10 +221,30 @@ svg {
     background-image: url(../images/Yessi_Bello_Perez.jpg);
 }
 
+.latest__article:nth-of-type(4) .latest__article__img {
+    background-image: url(../images/UAE.jpg);
+}
+
+.latest__article:nth-of-type(5) .latest__article__img {
+    background-image: url(../images/tiktok.png);
+}
+
+.latest__article:nth-of-type(6) .latest__article__img {
+    background-image: url(../images/radiohead.jpg);
+}
+
+.latest__article:nth-of-type(7) .latest__article__img {
+    background-image: url(../images/Aeon.png);
+}
+
+.latest__article:nth-of-type(8) .latest__article__img {
+    background-image: url(../images/Oleb.png);
+}
+
 .latest__article__title {
     grid-area: title;
+    font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    font-weight: bold;
     height: 100%;
 }
 
