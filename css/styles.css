@@ -188,6 +188,10 @@ svg {
 }
 
 /* #region latest-news */
+.latest {
+  padding-top: 24px;
+}
+
 .latest_articles {
   display: grid;
   grid-gap: 10px;
@@ -195,6 +199,7 @@ svg {
 }
 
 .latest > h2 {
+  margin-bottom: 24px;
   color: rgb(255, 68, 34);
   font-family: 'Poppins', sans-serif;
   font-size: 28px;
