@@ -99,7 +99,7 @@ svg {
 
 .big-images__item__main--date,
 .gradient {
-    display: none;
+  display: none;
 }
 
 .big-images__item header {
@@ -182,107 +182,107 @@ svg {
 
 /* #region wrapper */
 .wrapper {
-    max-width: 1192px;
-    padding: 0 20px;
-    margin: 0 auto;
+  max-width: 1192px;
+  padding: 0 20px;
+  margin: 0 auto;
 }
 
 /* #region latest-news */
-.latest_articles{
+.latest_articles {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(235px,1fr));
+  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
 }
 
 .latest > h2 {
-    color: rgb(255, 68, 34);
-    font-family: 'Poppins', sans-serif;
-    font-size: 28px;
-    font-weight: bolder;
+  color: rgb(255, 68, 34);
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: bolder;
 }
 
 .latest__article {
-    display: grid;
-    grid-template-columns: 75px 1fr;
-    grid-gap: 8px;
-    grid-template-areas: 
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-gap: 8px;
+  grid-template-areas:
     "img title"
     "img author-date";
 }
 
 .latest__article__img {
-    width: 75px;
-    height: 75px;
-    grid-area: img;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 50%;
+  width: 75px;
+  height: 75px;
+  grid-area: img;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
 }
 
 .latest__article__img a {
-    width: 100%;
-    height: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
 }
 
 .latest__article:nth-of-type(1) .latest__article__img {
-    background-image: url(../images/TNWDeals.jpg);
+  background-image: url(../images/TNWDeals.jpg);
 }
 
 .latest__article:nth-of-type(2) .latest__article__img {
-    background-image: url(../images/David_Canellis.jpg);
+  background-image: url(../images/David_Canellis.jpg);
 }
 
 .latest__article:nth-of-type(3) .latest__article__img {
-    background-image: url(../images/Yessi_Bello_Perez.jpg);
+  background-image: url(../images/Yessi_Bello_Perez.jpg);
 }
 
 .latest__article:nth-of-type(4) .latest__article__img {
-    background-image: url(../images/UAE.jpg);
+  background-image: url(../images/UAE.jpg);
 }
 
 .latest__article:nth-of-type(5) .latest__article__img {
-    background-image: url(../images/tiktok.png);
+  background-image: url(../images/tiktok.png);
 }
 
 .latest__article:nth-of-type(6) .latest__article__img {
-    background-image: url(../images/radiohead.jpg);
+  background-image: url(../images/radiohead.jpg);
 }
 
 .latest__article:nth-of-type(7) .latest__article__img {
-    background-image: url(../images/Aeon.png);
+  background-image: url(../images/Aeon.png);
 }
 
 .latest__article:nth-of-type(8) .latest__article__img {
-    background-image: url(../images/Oleb.png);
+  background-image: url(../images/Oleb.png);
 }
 
 .latest__article__title {
-    grid-area: title;
-    font-family: 'Raleway', sans-serif;
-    font-size: 14px;
+  grid-area: title;
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
 }
 
 .latest__article__title a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 .latest__article__author-date {
-    grid-area: author-date;
-    display: flex;
-    font-size: 12px;
-    color: gray;
+  grid-area: author-date;
+  display: flex;
+  font-size: 12px;
+  color: gray;
 }
 
 .latest__article__author-date a {
-    text-decoration: none;
-    color: gray;
+  text-decoration: none;
+  color: gray;
 }
 
 .latest__article__author-date li:nth-of-type(2)::before {
-    content: "\B7";
-    margin-left: 5px;
+  content: "\B7";
+  margin-left: 5px;
 }
 
 /* #endregion latest-news */
@@ -293,9 +293,9 @@ svg {
 
 /* #region media-queries */
 @media only screen and (min-width: 810px) {
-    main {
-        padding-top: 80px;
-    }
+  main {
+    padding-top: 80px;
+  }
 
   /* #region nav-bar */
   .visibility {
@@ -323,11 +323,11 @@ svg {
     background-color: black;
   }
 
-  .top-list ul {
+  .top-list__items {
     display: flex;
   }
 
-  .top-list ul li {
+  .top-list__items li {
     margin-right: 15px;
   }
 
@@ -379,17 +379,17 @@ svg {
   }
 
   /* #endregion big-images */
-  
+
   /* #region main */
 
   /* #region latest-news */
   .latest__article {
     grid-template-columns: 1fr;
     grid-template-rows: minmax(150px, 1fr) auto;
-    grid-template-areas: 
-    "img" 
-    "title"
-    "author-date";
+    grid-template-areas:
+      "img"
+      "title"
+      "author-date";
   }
 
   .latest__article__img {
@@ -397,10 +397,10 @@ svg {
     height: 100%;
     grid-area: img;
   }
+
   /* #endregion latest-news */
 
   /* #endregion main */
-
 }
 
 @media only screen and (min-width: 1024px) {
@@ -425,15 +425,17 @@ svg {
   }
 
   .big-images__link--main {
-    background: linear-gradient(transparent, black), 
-     url(../images/cuantuum.jpg) 50%/100% 100% no-repeat;
+    background:
+      linear-gradient(transparent, black),
+      url(../images/cuantuum.jpg) 50%/100% 100% no-repeat;
   }
 
   .gradient {
-    background: url(../images/tnw.svg) 20px 20px/50% no-repeat,  
-        transparent url(../images/cover_gradient.png) 0/100% 100% no-repeat;
+    background:
+      url(../images/tnw.svg) 20px 20px/50% no-repeat,
+      transparent url(../images/cover_gradient.png) 0/100% 100% no-repeat;
     display: block;
-    height: 100%;    
+    height: 100%;
     position: absolute;
     width: 100%;
     top: 0;
