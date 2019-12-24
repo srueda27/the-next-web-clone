@@ -261,7 +261,6 @@ svg {
     grid-area: title;
     font-family: 'Raleway', sans-serif;
     font-size: 14px;
-    height: 100%;
 }
 
 .latest__article__title a {
@@ -271,7 +270,6 @@ svg {
 
 .latest__article__author-date {
     grid-area: author-date;
-    justify-self: left;
     display: flex;
     font-size: 12px;
     color: gray;
