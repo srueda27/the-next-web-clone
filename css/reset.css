@@ -79,5 +79,7 @@ th:not([align]) {
   text-align: left;
 }
 
-ol, ul {
-	list-style: none;
+ol,
+ul {
+  list-style: none;
+}
