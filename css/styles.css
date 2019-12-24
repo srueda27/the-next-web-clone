@@ -203,7 +203,6 @@ svg {
 
 .latest__article {
     display: grid;
-    padding: 10px 0;
     grid-template-columns: 75px 1fr;
     grid-gap: 8px;
     grid-template-areas: 
