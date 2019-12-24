@@ -79,7 +79,7 @@ svg {
     "item1";
   width: 100%;
   padding: 8px;
-  box-shadow: 0 8px 5px rgb(223, 221, 221) inset;
+  box-shadow: 0 8px 50px rgb(236, 233, 233) inset;
   color: #fff;
 }
 
