@@ -180,14 +180,15 @@ svg {
     display: grid;
     grid-template-columns: 75px 1fr;
     grid-template-rows: auto;
+    grid-gap: 10px;
     grid-template-areas: 
-    "img title title"
-    "img author date";
+    "img title"
+    "img author-date";
 }
 
 .latest__article__img {
-    width: 100%;
-    height: 100%;
+    width: 75px;
+    height: 75px;
     grid-area: img;
     background-size: cover;
     background-repeat: no-repeat;
@@ -198,23 +199,34 @@ svg {
     background-image: url(../images/TNWDeals.jpg);
 }
 
-/* .latest__article__img img {
-    width: 100%;
-    height: 100%;
-    
-} */
-
 .latest__article__title {
     grid-area: title;
+    font-size: 14px;
+    font-weight: bold;
     height: 100%;
 }
 
-.latest__article__author {
-    grid-area: author;
+.latest__article__title a {
+    text-decoration: none;
+    color: black;
 }
 
-.latest__article__date {
-    grid-area: date;
+.latest__article__author-date {
+    grid-area: author-date;
+    justify-self: left;
+    display: flex;
+    font-size: 12px;
+    color: gray;
+}
+
+.latest__article__author-date a {
+    text-decoration: none;
+    color: gray;
+}
+
+.latest__article__author-date li:nth-of-type(2)::before {
+    content: "\B7";
+    margin-left: 5px;
 }
 
 /* #endregion latest-news */
