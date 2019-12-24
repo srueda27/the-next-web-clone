@@ -4,6 +4,7 @@ nav {
   width: 100%;
   position: fixed;
   z-index: 1;
+  box-shadow: 0 8px 50px rgb(236, 233, 233);
   background-color: #fff;
 }
 
@@ -19,6 +20,7 @@ svg {
   width: 16px;
   height: 16px;
 }
+
 /* #endregion base */
 
 /* #region nav-bar */
@@ -70,6 +72,8 @@ svg {
 /* #endregion nav-bar */
 
 /* #region main */
+
+/* #region big-images */
 .big-images {
   display: grid;
   grid-gap: 5px;
@@ -79,7 +83,6 @@ svg {
     "item1";
   width: 100%;
   padding: 8px;
-  box-shadow: 0 8px 50px rgb(236, 233, 233) inset;
   color: #fff;
 }
 
@@ -163,6 +166,60 @@ svg {
     position: relative;
     bottom: 2px;        
 }
+
+/* #endregion big-images */
+
+/* #region wrapper */
+.wrapper {
+    max-width: 1192px;
+    padding: 0 20px;
+}
+
+/* #region latest-news */
+.latest__article {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "img title title"
+    "img author date";
+}
+
+.latest__article__img {
+    width: 100%;
+    height: 100%;
+    grid-area: img;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+.latest__article:nth-of-type(1) .latest__article__img {
+    background-image: url(../images/TNWDeals.jpg);
+}
+
+/* .latest__article__img img {
+    width: 100%;
+    height: 100%;
+    
+} */
+
+.latest__article__title {
+    grid-area: title;
+    height: 100%;
+}
+
+.latest__article__author {
+    grid-area: author;
+}
+
+.latest__article__date {
+    grid-area: date;
+}
+
+/* #endregion latest-news */
+
+/* #endregion wrapper */
 
 /* #endregion main */
 
