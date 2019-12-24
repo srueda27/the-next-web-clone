@@ -19,6 +19,7 @@ svg {
   width: 16px;
   height: 16px;
 }
+
 /* #endregion base */
 
 /* #region nav-bar */
@@ -85,8 +86,8 @@ svg {
 }
 
 .big-images > h1 {
-    position: absolute;
-    clip-path: polygon(0px 0px, 0px 0px, 0px 0px, 0px 0px);
+  position: absolute;
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 }
 
 .big-images__item {
@@ -106,8 +107,8 @@ svg {
 }
 
 .big-images__item header h5 {
-    font-size: 13px;
-  }
+  font-size: 13px;
+}
 
 .big-images__link {
   height: 100%;
@@ -116,15 +117,15 @@ svg {
 }
 
 .big-images__link--main {
-    background: linear-gradient(transparent, black), url(../images/cuantuum.jpg) 50%/100% 100% no-repeat;
+  background: linear-gradient(transparent, black), url(../images/cuantuum.jpg) 50%/100% 100% no-repeat;
 }
 
 .big-images__link--item {
-    background: linear-gradient(transparent, black), url(../images/hacker.png) 50%/100% 100% no-repeat;    
+  background: linear-gradient(transparent, black), url(../images/hacker.png) 50%/100% 100% no-repeat;
 }
 
 .big-images__link--item1 {
-    background: linear-gradient(transparent, black), url(../images/button.png) 50%/100% 100% no-repeat;    
+  background: linear-gradient(transparent, black), url(../images/button.png) 50%/100% 100% no-repeat;
 }
 
 .big-images__link img {
@@ -156,18 +157,18 @@ svg {
 }
 
 .big-images__item__list a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .big-images__item__list span {
-    position: relative;
-    bottom: 6px;        
+  position: relative;
+  bottom: 6px;
 }
 
 .big-images__item__list svg {
-    position: relative;
-    bottom: 2px;        
+  position: relative;
+  bottom: 2px;
 }
 
 /* #endregion main */
@@ -234,8 +235,9 @@ svg {
   .bars {
     display: none;
   }
+
   /* #endregion nav-bar */
-  
+
   /* #region big-images */
   .big-images {
     height: 50vh;
@@ -247,12 +249,13 @@ svg {
   }
 
   .big-images__item {
-      height: 100%;
+    height: 100%;
   }
 
   .big-images__item__list--hide-share li:last-child {
-      display: none;
+    display: none;
   }
+
   /* #endregion big-images */
 }
 
@@ -268,17 +271,34 @@ svg {
       "top-list"
       "menu";
   }
+
   /* #endregion nav-bar */
 
   /* #region big-images */
   .big-images {
     height: 75vh;
     max-height: 560px;
-   }
+  }
 
-   .big-images__item__list--hide-share li:last-child {
-        display: block;
-    }
+  .big-images__link--main {
+    background: linear-gradient(transparent, black), 
+     url(../images/cuantuum.jpg) 50%/100% 100% no-repeat;
+  }
+
+  .gradient {
+    background: url(../images/tnw.svg) 20px 50px/50% no-repeat,  
+        transparent url(../images/cover_gradient.png) no-repeat;
+    height: 100%;    
+    position: absolute;
+    width: 100%;
+    top: 0;
+  }
+
+  .big-images__item__list--hide-share li:last-child {
+    display: block;
+  }
+
   /* #end region big-images */
 }
+
 /* #endregion media-queries */
