@@ -208,6 +208,10 @@ svg {
 }
 
 /* #region latest-news */
+.latest {
+  padding-top: 24px;
+}
+
 .latest__article {
   display: grid;
   grid-template-columns: 75px 1fr;
