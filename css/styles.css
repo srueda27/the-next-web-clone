@@ -1,13 +1,4 @@
 /* #region base */
-nav {
-  display: block;
-  width: 100%;
-  position: fixed;
-  z-index: 1;
-  box-shadow: 0 8px 50px rgb(236, 233, 233);
-  background-color: #fff;
-}
-
 .list-visibility {
   display: none;
 }
@@ -24,6 +15,15 @@ svg {
 /* #endregion base */
 
 /* #region nav-bar */
+.main-nav-bar {
+  display: block;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
+  box-shadow: 0 8px 50px rgb(236, 233, 233);
+  background-color: #fff;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -576,7 +576,7 @@ svg {
     display: block;
   }
 
-  /* #end region big-images */
+  /* #endregion big-images */
 }
 
 /* #endregion media-queries */
