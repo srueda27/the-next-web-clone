@@ -195,17 +195,19 @@ svg {
   font-weight: bolder;
 }
 
-/* #region latest-news */
-.latest {
+.latest,
+.fundings {
   margin-bottom: 30px;
 }
 
-.latest_articles {
+.latest_articles,
+.fundings__deals {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(235px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
 }
 
+/* #region latest-news */
 .latest__article {
   display: grid;
   grid-template-columns: 75px 1fr;
@@ -291,6 +293,96 @@ svg {
 }
 
 /* #endregion latest-news */
+
+/* #region fundings */
+.fundings__deals__deal:last-child {
+  display: none;
+}
+
+.fundings__deals__deal a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  text-decoration: none;
+}
+
+.fundings__deals__deal__header {
+  position: relative;
+}
+
+.fundings__deals__deal__header h2,
+.fundings__deals__deal__header div {
+  padding: 10.67px 16px 10.67px 84px;
+}
+
+.fundings__deals__deal__header h2 {
+  color: white;
+  font-weight: bold;
+  background: #f42;
+}
+
+.fundings__deals__deal__header div {
+  background: rgba(255,68,34,.08);
+}
+
+.fundings__deals__deal__header h4 {
+  color: black;
+  font-weight: bold;
+}
+
+.fundings__deals__deal__header h5 {
+  font-size: 11px;
+  color: gray;
+}
+
+.fundings__deals__deal__header img {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  margin: 10.67px;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+.fundings__deals__deal__invesment-card {
+  padding: 16px;
+}
+
+.fundings__deals__deal__invesment-card li {
+  font-size: 13px;
+  line-height: 22px;
+  margin: 5px 0;
+}
+
+.fundings__deals__deal__invesment-card svg {
+  position: relative;
+  top: 3px;
+}
+
+.fundings__deals__deal__invesment-card span {
+  color: #555;
+  margin-left: 10px;
+}
+
+.fundings__deals__deal__footer {
+  /* display: block; */
+  border-top: 1px solid rgba(255,68,34,.25);
+  padding: 10px 16px 16px;
+}
+
+.fundings__deals__deal__footer a {
+  display: initial;
+  color: #555;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.fundings__deals__deal__footer span {
+  color: #aaa;
+}
+
+/* #endregion fundings */
 
 /* #endregion wrapper */
 
