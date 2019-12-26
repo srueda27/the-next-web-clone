@@ -480,7 +480,7 @@ svg {
   main {
     padding-top: 80px;
   }
-  
+
   /* #region big-images */
   .big-images {
     height: 50vh;
@@ -592,11 +592,20 @@ svg {
 
   /* #region main */
 
+  .latest_articles,
+  .fundings__deals {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  
   /* #region fundings */
   .fundings__header {
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+  }
+
+  .fundings__deals__deal:last-child {
+    display: initial;
   }
 
   /* #endregion fundings */
