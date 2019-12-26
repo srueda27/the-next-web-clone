@@ -1,115 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Patua+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Patua+One&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap"
+      rel="stylesheet"
+    />
     <title>The Next Web Clone</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <!-- #region nav-bar -->
     <nav class="main-nav-bar">
-        <div class="nav-container">
-            <div class="top-list list-visibility">
-                <ul class="top-list__items">
-                    <li>News</li>
-                    <li>Events ▾</li>
-                    <li>Business ▾</li>
-                    <li>AMAs</li>
-                    <li>Spaces</li>
-                    <li>Tems & Conditions</li>
-                </ul>
-                <ul class="top-list__items">
-                    <li>About</li>
-                    <li>Team</li>
-                    <li>Advertise</li>
-                    <li>Jobs</li>
-                    <li>Contact</li>
-                </ul>
-            </div>
-            <div class="logo">
-                <a class="img-logo" href="javascript:void(0)"></a>
-            </div>
-            <div class="search-menu">
-                <ul class="main-list list-visibility">
-                    <li>latest</li>
-                    <li>hard fork</li>
-                    <li>plugged</li>
-                    <li>fundamentals</li>
-                    <li>work 2030</li>
-                </ul>
-                <a href="javascript:void(0)" class="search-menu__item">
-                    <div class="icon search">
-                        <svg viewBox="-7.5 992.5 16 16" id="search" x="832" y="832" xmlns="http://www.w3.org/2000/svg">
-                            <path fill="lightgray"
-                                d="M-2.883 994.449c1.299-1.3 2.871-1.949 4.716-1.949 1.845 0 3.418.649 4.717 1.949 1.301 1.301 1.95 2.871 1.95 4.716s-.649 3.416-1.95 4.715c-1.299 1.301-2.872 1.952-4.717 1.952-.978 0-1.9-.201-2.765-.602l-4.018 2.95c-.356.266-.75.367-1.184.299a1.564 1.564 0 0 1-1.05-.633c-.212-.288-.316-.608-.316-.958s.104-.67.316-.957l2.95-4c-.4-.866-.6-1.788-.6-2.767.001-1.844.652-3.414 1.951-4.715zm1.416 8.014c.912.913 2.012 1.369 3.3 1.369 1.289 0 2.389-.456 3.3-1.369.911-.907 1.366-2.008 1.366-3.298 0-1.287-.455-2.389-1.366-3.301-.911-.909-2.011-1.364-3.3-1.364-1.289 0-2.389.455-3.3 1.364-.911.912-1.366 2.014-1.366 3.301 0 1.29.455 2.391 1.366 3.298z" />
-                        </svg>
-                    </div>
-                </a>
-                <a href="javascript:void(0)" class="search-menu__item bars">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </a>
-            </div>
+      <div class="nav-container">
+        <div class="top-list list-visibility">
+          <ul class="top-list__items">
+            <li>News</li>
+            <li>Events ▾</li>
+            <li>Business ▾</li>
+            <li>AMAs</li>
+            <li>Spaces</li>
+            <li>Tems & Conditions</li>
+          </ul>
+          <ul class="top-list__items">
+            <li>About</li>
+            <li>Team</li>
+            <li>Advertise</li>
+            <li>Jobs</li>
+            <li>Contact</li>
+          </ul>
         </div>
+        <div class="logo">
+          <a class="img-logo" href="javascript:void(0)"></a>
+        </div>
+        <div class="search-menu">
+          <ul class="main-list list-visibility">
+            <li>latest</li>
+            <li>hard fork</li>
+            <li>plugged</li>
+            <li>fundamentals</li>
+            <li>work 2030</li>
+          </ul>
+          <a href="javascript:void(0)" class="search-menu__item">
+            <div class="icon search">
+              <svg
+                viewBox="-7.5 992.5 16 16"
+                id="search"
+                x="832"
+                y="832"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill="lightgray"
+                  d="M-2.883 994.449c1.299-1.3 2.871-1.949 4.716-1.949 1.845 0 3.418.649 4.717 1.949 1.301 1.301 1.95 2.871 1.95 4.716s-.649 3.416-1.95 4.715c-1.299 1.301-2.872 1.952-4.717 1.952-.978 0-1.9-.201-2.765-.602l-4.018 2.95c-.356.266-.75.367-1.184.299a1.564 1.564 0 0 1-1.05-.633c-.212-.288-.316-.608-.316-.958s.104-.67.316-.957l2.95-4c-.4-.866-.6-1.788-.6-2.767.001-1.844.652-3.414 1.951-4.715zm1.416 8.014c.912.913 2.012 1.369 3.3 1.369 1.289 0 2.389-.456 3.3-1.369.911-.907 1.366-2.008 1.366-3.298 0-1.287-.455-2.389-1.366-3.301-.911-.909-2.011-1.364-3.3-1.364-1.289 0-2.389.455-3.3 1.364-.911.912-1.366 2.014-1.366 3.301 0 1.29.455 2.391 1.366 3.298z"
+                />
+              </svg>
+            </div>
+          </a>
+          <a href="javascript:void(0)" class="search-menu__item bars">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
+        </div>
+      </div>
     </nav>
     <!-- #endregion nav-bar -->
     <!-- #region main -->
     <main>
-        <!-- #region big-images -->
-        <section class="big-images">
+      <!-- #region main-images -->
+      <section class="main-images">
+        <h2>
+          Main articles
+        </h2>
+        <article class="big-images__item main-images__main">
+          <a
+            href="javascript:void(0)"
+            class="big-images__link main-images__link--main"
+          >
+          </a>
+          <div class="gradient"></div>
+          <div class="main-images__main--date">
+            Monday — December 23, 2019
+          </div>
+          <header>
+            <h2>2019 was a huge year for quantum computing</h2>
+            <ul class="big-images__item__list">
+              <li>by <a href="javascript:void(0)">Tristan Greene</a></li>
+              <li>
+                <svg
+                  viewBox="-7.5 992.5 16 16"
+                  x="144"
+                  y="144"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="lightgray"
+                    d="M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982 7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075 4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008 1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0 1-2.917-2.916c-.717-1.229-1.075-2.564-1.075-4.009s.358-2.78 1.075-4.009a7.99 7.99 0 0 1 2.917-2.916zM-3.7 1004.7c1.178 1.178 2.578 1.767 4.2 1.767 1.622 0 3.022-.589 4.2-1.767 1.177-1.178 1.767-2.578 1.767-4.2s-.59-3.022-1.767-4.2c-1.178-1.178-2.578-1.767-4.2-1.767-1.623 0-3.022.589-4.2 1.767s-1.767 2.578-1.767 4.2.589 3.022 1.767 4.2zm7.267-1.066a.84.84 0 0 1-.592.232.84.84 0 0 1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1 .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783 2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z"
+                  />
+                </svg>
+                <span>3 hours ago</span>
+              </li>
+              <li>
+                <svg
+                  viewBox="-7.5 992.5 16 16"
+                  x="912"
+                  y="912"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="lightgray"
+                    d="M8.5 1005.5a3.001 3.001 0 0 1-6 0v-.008l-5.195-2.594a3 3 0 1 1 0-4.796l5.195-2.594v-.008a3.001 3.001 0 0 1 6 0 3.001 3.001 0 0 1-4.805 2.398l-5.211 2.602 5.211 2.602A3 3 0 0 1 8.5 1005.5z"
+                  />
+                </svg>
+                <span>31</span>
+              </li>
+            </ul>
+          </header>
+        </article>
+        <article class="big-images__item main-images__item">
+          <a
+            href="javascript:void(0)"
+            class="big-images__link main-images__link--item"
+          >
+          </a>
+          <header>
+            <h5>INSIGHTS</h5>
             <h2>
-                Main articles
+              Hackers steal $480,000 worth of NULS cryptocurrency from its dev
+              team
             </h2>
-            <article class="big-images__item big-images__item__main">
-                <a href="javascript:void(0)" class="big-images__link big-images__link--main">
-                </a>
-                <div class="gradient"></div>
-                <div class="big-images__item__main--date">Monday — December 23, 2019</div>
-                <header>
-                    <h2>2019 was a huge year for quantum computing</h2>
-                    <ul class="big-images__item__list">
-                        <li>by <a href="javascript:void(0)">Tristan Greene</a></li>
-                        <li>
-                            <svg viewBox="-7.5 992.5 16 16" x="144" y="144" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="lightgray"
-                                    d="M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982 7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075 4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008 1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0 1-2.917-2.916c-.717-1.229-1.075-2.564-1.075-4.009s.358-2.78 1.075-4.009a7.99 7.99 0 0 1 2.917-2.916zM-3.7 1004.7c1.178 1.178 2.578 1.767 4.2 1.767 1.622 0 3.022-.589 4.2-1.767 1.177-1.178 1.767-2.578 1.767-4.2s-.59-3.022-1.767-4.2c-1.178-1.178-2.578-1.767-4.2-1.767-1.623 0-3.022.589-4.2 1.767s-1.767 2.578-1.767 4.2.589 3.022 1.767 4.2zm7.267-1.066a.84.84 0 0 1-.592.232.84.84 0 0 1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1 .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783 2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z" />
-                            </svg>
-                            <span>3 hours ago</span>
-                        </li>
-                        <li>
-                            <svg viewBox="-7.5 992.5 16 16" x="912" y="912" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="lightgray"
-                                    d="M8.5 1005.5a3.001 3.001 0 0 1-6 0v-.008l-5.195-2.594a3 3 0 1 1 0-4.796l5.195-2.594v-.008a3.001 3.001 0 0 1 6 0 3.001 3.001 0 0 1-4.805 2.398l-5.211 2.602 5.211 2.602A3 3 0 0 1 8.5 1005.5z" />
-                            </svg>
-                            <span>31</span>
-                        </li>
-                    </ul>
-                </header>
-            </article>
-            <article class="big-images__item big-images__item__item">
-                <a href="javascript:void(0)" class="big-images__link big-images__link--item">
-                </a>
-                <header>
-                    <h5>INSIGHTS</h5>
-                    <h2>
-                        Hackers steal $480,000 worth of NULS cryptocurrency from its dev
-                        team
-                    </h2>
-                    <ul class="big-images__item__list big-images__item__list--hide-share">
-                        <li>by <a href="javascript:void(0)">David Canellis</a></li>
-                        <li>
-                            <svg viewBox="-7.5 992.5 16 16" x="144" y="144" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="lightgray" d=" M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982
+            <ul
+              class="big-images__item__list big-images__item__list--hide-share"
+            >
+              <li>by <a href="javascript:void(0)">David Canellis</a></li>
+              <li>
+                <svg
+                  viewBox="-7.5 992.5 16 16"
+                  x="144"
+                  y="144"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="lightgray"
+                    d=" M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982
                                     7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075
                                     4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008
                                     1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0
@@ -121,403 +171,604 @@
                                     0 0 1-.592.232.84.84 0 0
                                     1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1
                                     .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783
-                                    2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z" />
-                            </svg>
-                            <span>4 hours ago</span>
-                        </li>
-                        <li>
-                            <svg viewBox="-7.5 992.5 16 16" x="912" y="912" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="lightgray"
-                                    d="M8.5 1005.5a3.001 3.001 0 0 1-6 0v-.008l-5.195-2.594a3 3 0 1 1 0-4.796l5.195-2.594v-.008a3.001 3.001 0 0 1 6 0 3.001 3.001 0 0 1-4.805 2.398l-5.211 2.602 5.211 2.602A3 3 0 0 1 8.5 1005.5z" />
-                            </svg>
-                            <span>29</span>
-                        </li>
-                    </ul>
-                </header>
+                                    2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z"
+                  />
+                </svg>
+                <span>4 hours ago</span>
+              </li>
+              <li>
+                <svg
+                  viewBox="-7.5 992.5 16 16"
+                  x="912"
+                  y="912"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="lightgray"
+                    d="M8.5 1005.5a3.001 3.001 0 0 1-6 0v-.008l-5.195-2.594a3 3 0 1 1 0-4.796l5.195-2.594v-.008a3.001 3.001 0 0 1 6 0 3.001 3.001 0 0 1-4.805 2.398l-5.211 2.602 5.211 2.602A3 3 0 0 1 8.5 1005.5z"
+                  />
+                </svg>
+                <span>29</span>
+              </li>
+            </ul>
+          </header>
+        </article>
+        <article class="big-images__item main-images__item1">
+          <a
+            href="javascript:void(0)"
+            class="big-images__link main-images__link--item1"
+          >
+          </a>
+          <header>
+            <h5>CREATIVE</h5>
+            <h2>How to design better buttons</h2>
+            <ul
+              class="big-images__item__list big-images__item__list--hide-share"
+            >
+              <li>by <a href="javascript:void(0)">Michal Malewicz</a></li>
+              <li>
+                <svg
+                  viewBox="-7.5 992.5 16 16"
+                  x="144"
+                  y="144"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="lightgray"
+                    d="M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982 7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075 4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008 1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0 1-2.917-2.916c-.717-1.229-1.075-2.564-1.075-4.009s.358-2.78 1.075-4.009a7.99 7.99 0 0 1 2.917-2.916zM-3.7 1004.7c1.178 1.178 2.578 1.767 4.2 1.767 1.622 0 3.022-.589 4.2-1.767 1.177-1.178 1.767-2.578 1.767-4.2s-.59-3.022-1.767-4.2c-1.178-1.178-2.578-1.767-4.2-1.767-1.623 0-3.022.589-4.2 1.767s-1.767 2.578-1.767 4.2.589 3.022 1.767 4.2zm7.267-1.066a.84.84 0 0 1-.592.232.84.84 0 0 1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1 .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783 2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z"
+                  />
+                </svg>
+                <span>6 hours ago</span>
+              </li>
+              <li>
+                <svg
+                  viewBox="-7.5 992.5 16 16"
+                  x="912"
+                  y="912"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill="lightgray"
+                    d="M8.5 1005.5a3.001 3.001 0 0 1-6 0v-.008l-5.195-2.594a3 3 0 1 1 0-4.796l5.195-2.594v-.008a3.001 3.001 0 0 1 6 0 3.001 3.001 0 0 1-4.805 2.398l-5.211 2.602 5.211 2.602A3 3 0 0 1 8.5 1005.5z"
+                  />
+                </svg>
+                <span>3</span>
+              </li>
+            </ul>
+          </header>
+        </article>
+      </section>
+      <!-- #endregion main-images -->
+
+      <!-- #region wrapper -->
+      <div class="wrapper">
+        <!-- #region latest-news -->
+        <section class="latest">
+          <h2 class="section-title">Latest news ></h2>
+          <div class="latest_articles">
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/offers/2019/12/23/projectdue-helps-keep-your-business-affairs-straight-and-right-now-its-over-90-off/"
+                  >ProjectDue helps keep your business affairs straight -- and
+                  right now, it’s over 90% off</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/tnwdeals/"
+                      >TNW Deals</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>4 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/offers/2019/12/23/projectdue-helps-keep-your-business-affairs-straight-and-right-now-its-over-90-off/"
+                ></a>
+              </div>
             </article>
-            <article class="big-images__item big-images__item__item1">
-                <a href="javascript:void(0)" class="big-images__link big-images__link--item1">
-                </a>
-                <header>
-                    <h5>CREATIVE</h5>
-                    <h2>How to design better buttons</h2>
-                    <ul class="big-images__item__list big-images__item__list--hide-share">
-                        <li>by <a href="javascript:void(0)">Michal Malewicz</a></li>
-                        <li>
-                            <svg viewBox="-7.5 992.5 16 16" x="144" y="144" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="lightgray"
-                                    d="M-3.508 993.575C-2.28 992.858-.944 992.5.5 992.5s2.78.358 4.008 1.075a7.982 7.982 0 0 1 2.917 2.916c.717 1.229 1.075 2.564 1.075 4.009s-.358 2.78-1.075 4.009a7.975 7.975 0 0 1-2.917 2.916c-1.228.717-2.564 1.075-4.008 1.075s-2.781-.358-4.008-1.075a7.982 7.982 0 0 1-2.917-2.916c-.717-1.229-1.075-2.564-1.075-4.009s.358-2.78 1.075-4.009a7.99 7.99 0 0 1 2.917-2.916zM-3.7 1004.7c1.178 1.178 2.578 1.767 4.2 1.767 1.622 0 3.022-.589 4.2-1.767 1.177-1.178 1.767-2.578 1.767-4.2s-.59-3.022-1.767-4.2c-1.178-1.178-2.578-1.767-4.2-1.767-1.623 0-3.022.589-4.2 1.767s-1.767 2.578-1.767 4.2.589 3.022 1.767 4.2zm7.267-1.066a.84.84 0 0 1-.592.232.84.84 0 0 1-.592-.232l-2.633-2.101c-.233-.211-.339-.461-.317-.75l.184-4.233a.866.866 0 0 1 .283-.616.834.834 0 0 1 .633-.233c.233.011.431.1.592.267s.247.361.258.583l.167 3.783 2.067 2.033a.85.85 0 0 1 .233.643.88.88 0 0 1-.283.624z" />
-                            </svg>
-                            <span>6 hours ago</span>
-                        </li>
-                        <li>
-                            <svg viewBox="-7.5 992.5 16 16" x="912" y="912" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="lightgray"
-                                    d="M8.5 1005.5a3.001 3.001 0 0 1-6 0v-.008l-5.195-2.594a3 3 0 1 1 0-4.796l5.195-2.594v-.008a3.001 3.001 0 0 1 6 0 3.001 3.001 0 0 1-4.805 2.398l-5.211 2.602 5.211 2.602A3 3 0 0 1 8.5 1005.5z" />
-                            </svg>
-                            <span>3</span>
-                        </li>
-                    </ul>
-                </header>
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/hardfork/2019/12/23/bitcoin-cryptocurrency-onecoin-blockchain-disney-tron-vinnik/"
+                  >Moonday Mornings: Alleged billion-dollar Bitcoin launderer
+                  extradited to France</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/davidcanellis/"
+                      >David Canellis</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>6 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/hardfork/2019/12/23/bitcoin-cryptocurrency-onecoin-blockchain-disney-tron-vinnik/"
+                ></a>
+              </div>
             </article>
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/hardfork/2019/12/23/onecoin-cryptocurrency-scam-need-to-know/"
+                  >2019's juiciest crypto drama: The saga of OneCoin’s $4B
+                  ‘cryptocurrency’ scam</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/yessibelloperez/"
+                      >Yessi Bello Perez</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>7 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/hardfork/2019/12/23/onecoin-cryptocurrency-scam-need-to-know/"
+                ></a>
+              </div>
+            </article>
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/security/2019/12/23/the-uae-is-reportedly-spying-on-millions-of-totok-messenger-users/"
+                  >The UAE is reportedly spying on millions of ToTok messenger
+                  users</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/abhimanyughoshal/"
+                      >Abhimanyu Ghoshal</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>8 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/security/2019/12/23/the-uae-is-reportedly-spying-on-millions-of-totok-messenger-users/"
+                ></a>
+              </div>
+            </article>
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/apps/2019/12/23/us-navy-officers-cant-use-tiktok-on-government-issued-phones-because-its-a-cybersecurity-threat/"
+                  >US Navy officers can't use TikTok on government-issued phones
+                  because it's a 'cybersecurity threat'</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/abhimanyughoshal/"
+                      >Abhimanyu Ghoshal</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>8 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/apps/2019/12/23/us-navy-officers-cant-use-tiktok-on-government-issued-phones-because-its-a-cybersecurity-threat/"
+                ></a>
+              </div>
+            </article>
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/distract/2019/12/23/you-can-now-stream-every-radiohead-album-for-free-on-youtube/"
+                  >You can now stream every Radiohead album for free on
+                  YouTube</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/abhimanyughoshal/"
+                      >Abhimanyu Ghoshal</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>13 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/distract/2019/12/23/you-can-now-stream-every-radiohead-album-for-free-on-youtube/"
+                ></a>
+              </div>
+            </article>
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/syndication/2019/12/23/how-do-you-teach-a-car-that-a-snowman-wont-walk-across-the-road/"
+                  >How do you teach a car that a snowman won’t walk across the
+                  road?</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/aeon/">Aeon</a>
+                  </span>
+                </li>
+                <li>
+                  <span>15 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/syndication/2019/12/23/how-do-you-teach-a-car-that-a-snowman-wont-walk-across-the-road/"
+                ></a>
+              </div>
+            </article>
+            <article class="latest__article">
+              <h3 class="latest__article__title">
+                <a
+                  href="https://thenextweb.com/syndication/2019/12/23/how-i-used-app-store-optimization-to-get-my-game-downloaded-2m-times/"
+                  >How I used app store optimization to get my game downloaded
+                  2M times</a
+                >
+              </h3>
+              <ul class="latest__article__author-date">
+                <li>
+                  <span>
+                    <a href="https://thenextweb.com/author/oleg-yakubnekov/"
+                      >Oleg Yakubnekov</a
+                    >
+                  </span>
+                </li>
+                <li>
+                  <span>17 hours ago</span>
+                </li>
+              </ul>
+              <div class="latest__article__img">
+                <a
+                  href="https://thenextweb.com/syndication/2019/12/23/how-i-used-app-store-optimization-to-get-my-game-downloaded-2m-times/"
+                ></a>
+              </div>
+            </article>
+          </div>
         </section>
-        <!-- #endregion big-images -->
+        <!-- #endregion latest-news -->
 
-        <!-- #region wrapper -->
-        <div class="wrapper">
-            <!-- #region latest-news -->
-            <section class="latest">
-                <h2 class="section-title">Latest news ></h2>
-                <div class="latest_articles">
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/offers/2019/12/23/projectdue-helps-keep-your-business-affairs-straight-and-right-now-its-over-90-off/">ProjectDue
-                                helps keep your business affairs straight -- and right
-                                now, it’s over 90% off</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/tnwdeals/">TNW Deals</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>4 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/offers/2019/12/23/projectdue-helps-keep-your-business-affairs-straight-and-right-now-its-over-90-off/"></a>
-                        </div>
-                    </article>
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/hardfork/2019/12/23/bitcoin-cryptocurrency-onecoin-blockchain-disney-tron-vinnik/">Moonday
-                                Mornings: Alleged billion-dollar Bitcoin launderer extradited to France</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/davidcanellis/">David Canellis</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>6 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/hardfork/2019/12/23/bitcoin-cryptocurrency-onecoin-blockchain-disney-tron-vinnik/"></a>
-                        </div>
-                    </article>
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/hardfork/2019/12/23/onecoin-cryptocurrency-scam-need-to-know/">2019's
-                                juiciest crypto drama: The saga of OneCoin’s $4B ‘cryptocurrency’ scam</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/yessibelloperez/">Yessi Bello Perez</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>7 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/hardfork/2019/12/23/onecoin-cryptocurrency-scam-need-to-know/"></a>
-                        </div>
-                    </article>
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/security/2019/12/23/the-uae-is-reportedly-spying-on-millions-of-totok-messenger-users/">The
-                                UAE is reportedly spying on millions of ToTok messenger users</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/abhimanyughoshal/">Abhimanyu Ghoshal</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>8 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/security/2019/12/23/the-uae-is-reportedly-spying-on-millions-of-totok-messenger-users/"></a>
-                        </div>
-                    </article>
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/apps/2019/12/23/us-navy-officers-cant-use-tiktok-on-government-issued-phones-because-its-a-cybersecurity-threat/">US
-                                Navy officers can't use TikTok on government-issued phones because it's a 'cybersecurity
-                                threat'</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/abhimanyughoshal/">Abhimanyu Ghoshal</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>8 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/apps/2019/12/23/us-navy-officers-cant-use-tiktok-on-government-issued-phones-because-its-a-cybersecurity-threat/"></a>
-                        </div>
-                    </article>
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/distract/2019/12/23/you-can-now-stream-every-radiohead-album-for-free-on-youtube/">You
-                                can now stream every Radiohead album for free on YouTube</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/abhimanyughoshal/">Abhimanyu Ghoshal</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>13 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/distract/2019/12/23/you-can-now-stream-every-radiohead-album-for-free-on-youtube/"></a>
-                        </div>
-                    </article>
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/syndication/2019/12/23/how-do-you-teach-a-car-that-a-snowman-wont-walk-across-the-road/">How
-                                do you teach a car that a snowman won’t walk across the road?</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/aeon/">Aeon</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>15 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/syndication/2019/12/23/how-do-you-teach-a-car-that-a-snowman-wont-walk-across-the-road/"></a>
-                        </div>
-                    </article>
-                    <article class="latest__article">
-                        <h3 class="latest__article__title">
-                            <a
-                                href="https://thenextweb.com/syndication/2019/12/23/how-i-used-app-store-optimization-to-get-my-game-downloaded-2m-times/">How
-                                I used app store optimization to get my game downloaded 2M times</a>
-                        </h3>
-                        <ul class="latest__article__author-date">
-                            <li>
-                                <span>
-                                    <a href="https://thenextweb.com/author/oleg-yakubnekov/">Oleg Yakubnekov</a>
-                                </span>
-                            </li>
-                            <li>
-                                <span>17 hours ago</span>
-                            </li>
-                        </ul>
-                        <div class="latest__article__img">
-                            <a
-                                href="https://thenextweb.com/syndication/2019/12/23/how-i-used-app-store-optimization-to-get-my-game-downloaded-2m-times/"></a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <!-- #endregion latest-news -->
+        <!-- #region fundings -->
+        <section class="fundings">
+          <header class="fundings__header">
+            <h2 class="fundings__header__title section-title">
+              Latest funding rounds on Index.co >
+            </h2>
+            <ul class="fundings__header__links">
+              <li>
+                <a href="javascript:void(0)">See more</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Get updates by email</a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">Add info</a>
+              </li>
+            </ul>
+          </header>
+          <div class="fundings__deals">
+            <article class="fundings__deals__deal">
+              <header class="fundings__deals__deal__header">
+                <a
+                  href="https://index.co/company/gosummersalt/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"
+                >
+                  <h2>SUMMERSALT</h2>
+                  <div>
+                    <h4>$17.3M</h4>
+                    <h5>SERIES B</h5>
+                  </div>
+                  <img src="images/Summersalt.jpg" alt="Summersalt logo" />
+                </a>
+              </header>
+              <ul class="fundings__deals__deal__invesment-card">
+                <li>
+                  <a
+                    href="https://index.co/company/gosummersalt/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"
+                  >
+                    <svg
+                      viewBox="656.5 1056.5 16 16"
+                      x="976"
+                      y="976"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                    <span>E-Commerce</span>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://index.co/company/gosummersalt/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com"
+                  >
+                    <svg
+                      viewBox="-239.5 160.5 16 16"
+                      x="48"
+                      y="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                    <span>Dundee Venture Capital, +5</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="fundings__deals__deal__footer">
+                <a
+                  href="http://www.finsmes.com/2019/12/summersalt-secures-usd-17-3m-series-b-funding.html"
+                  >Summersalt Secures $17.3M in Series B Funding<span>
+                    on FinSMEs</span
+                  ></a
+                >
+              </div>
+            </article>
+            <article class="fundings__deals__deal">
+              <header class="fundings__deals__deal__header">
+                <a href="javascript:void(0)">
+                  <h2>Smart Wires Inc.</h2>
+                  <div>
+                    <h4>$75M</h4>
+                    <h5>VENTURE CAPITAL</h5>
+                  </div>
+                  <img src="images/SmartWires.jpg" alt="Smart Wires Inc logo" />
+                </a>
+              </header>
+              <ul class="fundings__deals__deal__invesment-card">
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg
+                      viewBox="656.5 1056.5 16 16"
+                      x="976"
+                      y="976"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                    <span>Manufacturing, +2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg
+                      viewBox="-239.5 160.5 16 16"
+                      x="48"
+                      y="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                    <span>Lime Rock New Energy</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="fundings__deals__deal__footer">
+                <a href=""
+                  >Smart Wires Receives $75M in Growth Equity Financing<span>
+                    on FinSMEs</span
+                  ></a
+                >
+              </div>
+            </article>
+            <article class="fundings__deals__deal">
+              <header class="fundings__deals__deal__header">
+                <a href="javascript:void(0)">
+                  <h2>SkySpecs</h2>
+                  <div>
+                    <h4>$17M</h4>
+                    <h5>SERIES C</h5>
+                  </div>
+                  <img src="images/SkySpecs.jpg" alt="SkySpecs logo" />
+                </a>
+              </header>
+              <ul class="fundings__deals__deal__invesment-card">
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg
+                      viewBox="656.5 1056.5 16 16"
+                      x="976"
+                      y="976"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                    <span>Robotics, +2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg
+                      viewBox="-239.5 160.5 16 16"
+                      x="48"
+                      y="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                    <span>Venture Investors, +7</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="fundings__deals__deal__footer">
+                <a href=""
+                  >SkySpecs Raises 17M in Series C Funding<span>
+                    on FinSMEs</span
+                  ></a
+                >
+              </div>
+            </article>
+            <article class="fundings__deals__deal">
+              <header class="fundings__deals__deal__header">
+                <a href="javascript:void(0)">
+                  <h2>AYLIEN</h2>
+                  <div>
+                    <h4>€5m</h4>
+                    <h5>SERIES A</h5>
+                  </div>
+                  <img src="images/Aylien.jpg" alt="Aylien logo" />
+                </a>
+              </header>
+              <ul class="fundings__deals__deal__invesment-card">
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg
+                      viewBox="656.5 1056.5 16 16"
+                      x="976"
+                      y="976"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z"
+                      />
+                    </svg>
+                    <span>Robotics, +2</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="javascript:void(0)">
+                    <svg
+                      viewBox="-239.5 160.5 16 16"
+                      x="48"
+                      y="48"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z"
+                      />
+                    </svg>
+                    <span>Venture Investors, +7</span>
+                  </a>
+                </li>
+              </ul>
+              <div class="fundings__deals__deal__footer">
+                <a href=""
+                  >Irish Al-risk Intelligence provider Aylien raises €5m<span>
+                    on the home of AI info</span
+                  ></a
+                >
+              </div>
+            </article>
+          </div>
+        </section>
+        <!-- #endregion fundings -->
 
-            <!-- #region fundings -->
-            <section class="fundings">
-                <header class="fundings__header">
-                    <h2 class="fundings__header__title section-title">Latest funding rounds on Index.co ></h2>
-                    <ul class="fundings__header__links">
-                        <li>
-                            <a href="javascript:void(0)">See more</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Get updates by email</a>
-                        </li>
-                        <li>
-                            <a href="javascript:void(0)">Add info</a>
-                        </li>
-                    </ul>
-                </header>
-                <div class="fundings__deals">
-                    <article class="fundings__deals__deal">
-                        <header class="fundings__deals__deal__header">
-                            <a
-                                href="https://index.co/company/gosummersalt/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">
-                                <h2>SUMMERSALT</h2>
-                                <div>
-                                    <h4>$17.3M</h4>
-                                    <h5>SERIES B</h5>
-                                </div>
-                                <img src="images/Summersalt.jpg" alt="Summersalt logo">
-                            </a>
-                        </header>
-                        <ul class="fundings__deals__deal__invesment-card">
-                            <li>
-                                <a
-                                    href="https://index.co/company/gosummersalt/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">
-                                    <svg viewBox="656.5 1056.5 16 16" x="976" y="976"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z" />
-                                    </svg>
-                                    <span>E-Commerce</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-                                    href="https://index.co/company/gosummersalt/funding/series-b?utm_campaign=funding_block&utm_medium=referral&utm_source=thenextweb.com">
-                                    <svg viewBox="-239.5 160.5 16 16" x="48" y="48" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z" />
-                                    </svg>
-                                    <span>Dundee Venture Capital, +5</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="fundings__deals__deal__footer">
-                            <a href="http://www.finsmes.com/2019/12/summersalt-secures-usd-17-3m-series-b-funding.html">Summersalt
-                                Secures $17.3M in Series B Funding<span> on FinSMEs</span></a>
-                        </div>
-                    </article>
-                    <article class="fundings__deals__deal">
-                        <header class="fundings__deals__deal__header">
-                            <a href="javascript:void(0)">
-                                <h2>Smart Wires Inc.</h2>
-                                <div>
-                                    <h4>$75M</h4>
-                                    <h5>VENTURE CAPITAL</h5>
-                                </div>
-                                <img src="images/SmartWires.jpg" alt="Smart Wires Inc logo">
-                            </a>
-                        </header>
-                        <ul class="fundings__deals__deal__invesment-card">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <svg viewBox="656.5 1056.5 16 16" x="976" y="976"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z" />
-                                    </svg>
-                                    <span>Manufacturing, +2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <svg viewBox="-239.5 160.5 16 16" x="48" y="48" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z" />
-                                    </svg>
-                                    <span>Lime Rock New Energy</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="fundings__deals__deal__footer">
-                            <a href="">Smart Wires Receives $75M in Growth Equity
-                                Financing<span> on FinSMEs</span></a>
-                        </div>
-                    </article>
-                    <article class="fundings__deals__deal">
-                        <header class="fundings__deals__deal__header">
-                            <a href="javascript:void(0)">
-                                <h2>SkySpecs</h2>
-                                <div>
-                                    <h4>$17M</h4>
-                                    <h5>SERIES C</h5>
-                                </div>
-                                <img src="images/SkySpecs.jpg" alt="SkySpecs logo">
-                            </a>
-                        </header>
-                        <ul class="fundings__deals__deal__invesment-card">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <svg viewBox="656.5 1056.5 16 16" x="976" y="976"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z" />
-                                    </svg>
-                                    <span>Robotics, +2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <svg viewBox="-239.5 160.5 16 16" x="48" y="48" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z" />
-                                    </svg>
-                                    <span>Venture Investors, +7</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="fundings__deals__deal__footer">
-                            <a href="">SkySpecs Raises 17M in Series C Funding<span>
-                                    on FinSMEs</span></a>
-                        </div>
-                    </article>
-                    <article class="fundings__deals__deal">
-                        <header class="fundings__deals__deal__header">
-                            <a href="javascript:void(0)">
-                                <h2>AYLIEN</h2>
-                                <div>
-                                    <h4>€5m</h4>
-                                    <h5>SERIES A</h5>
-                                </div>
-                                <img src="images/Aylien.jpg" alt="Aylien logo">
-                            </a>
-                        </header>
-                        <ul class="fundings__deals__deal__invesment-card">
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <svg viewBox="656.5 1056.5 16 16" x="976" y="976"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M661.231 1059.879c0-.373-.132-.691-.396-.955-.264-.265-.583-.396-.956-.396s-.692.132-.956.396a1.301 1.301 0 0 0-.396.955c0 .374.132.692.396.956s.583.396.956.396.691-.132.956-.396.396-.582.396-.956zm11.269 6.083c0 .374-.13.69-.391.951l-5.186 5.195a1.35 1.35 0 0 1-.961.392c-.373 0-.69-.131-.95-.392l-7.551-7.562c-.268-.26-.495-.615-.681-1.066-.187-.45-.28-.862-.28-1.235v-4.394a1.3 1.3 0 0 1 .401-.95c.268-.268.584-.401.951-.401h4.394c.373 0 .785.093 1.235.279.451.188.81.414 1.077.682l7.551 7.541c.261.274.391.595.391.96z" />
-                                    </svg>
-                                    <span>Robotics, +2</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="javascript:void(0)">
-                                    <svg viewBox="-239.5 160.5 16 16" x="48" y="48" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M-233.786 163.833h4.571v-1.166h-4.571v1.166zm10.286 5.833v4.374c0 .402-.141.744-.42 1.03-.28.285-.616.43-1.009.43h-13.144c-.393 0-.729-.145-1.009-.43s-.419-.628-.419-1.03v-4.374h6v1.459c0 .158.056.293.169.409a.545.545 0 0 0 .402.173h2.855a.545.545 0 0 0 .402-.173.565.565 0 0 0 .17-.409v-1.459h6.003zm-6.857 0v1.167h-2.285v-1.167h2.285zm6.857-4.373v3.498h-16v-3.498c0-.403.14-.745.419-1.032.28-.284.616-.429 1.009-.429h3.144v-1.457c0-.243.083-.449.25-.62a.822.822 0 0 1 .606-.255h5.144c.237 0 .439.086.606.255a.857.857 0 0 1 .249.62v1.457h3.145c.393 0 .729.145 1.009.429.278.287.419.63.419 1.032z" />
-                                    </svg>
-                                    <span>Venture Investors, +7</span>
-                                </a>
-                            </li>
-                        </ul>
-                        <div class="fundings__deals__deal__footer">
-                            <a href="">Irish Al-risk Intelligence provider Aylien
-                                raises €5m<span> on the home of AI info</span></a>
-                        </div>
-                    </article>
-                </div>
-            </section>
-            <!-- #endregion fundings -->
-        </div>
-        <!-- #endregion wrapper -->
+        <!-- #region categories -->
+        <section class="categories">
+          <h2>
+            Articles by category
+          </h2>
+          <section class="category-card">
+            <h3 class="section-title">Apps ></h3>
+            <article class="big-images__item">
+              <a href="javascript:void(0)" class="big-images__link apps-image">
+              </a>
+              <header>
+                <h5>Most Popular</h5>
+                <h2>
+                  The UAE is reportedly spying on millions of ToTok messenger
+                  users
+                </h2>
+                <ul
+                  class="big-images__item__list big-images__item__list--hide-share"
+                >
+                  <li>by <a href="javascript:void(0)">Abhimanyu Ghoshal</a></li>
+                  <li>
+                    <span class="big-images__span">3 days ago</span>
+                  </li>
+                </ul>
+              </header>
+            </article>
+            <article class="category-other-article">
+              <div class="category-other-article__text">
+                <h4>LATEST</h4>
+                <p>
+                  <a
+                    href="javascript:void(0)"
+                    class="category-other-article__link"
+                    >US Navy officers can't use TikTok on government-issued
+                    phones because it's a 'cybersecurity threat'</a
+                  >
+                </p>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="category-other-article__image"
+              ></a>
+            </article>
+            <ul class="category-links-list">
+              <li>
+                <a href="javascript:void(0)">
+                  Instagram influencers can no longer promote vaping, guns, or
+                  cigarettes
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  Instagram influencers can no longer promote vaping, guns, or
+                  cigarettes
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  Facebook owns the four most popular apps of the decade
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  Microsoft wants devs to submit Chromium Edge add-ons ahead of
+                  its launch
+                </a>
+              </li>
+              <li>
+                <a href="javascript:void(0)">
+                  Instagram's AI now warns you if your caption is offensive
+                </a>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <!-- #endregion categories -->
+      </div>
+      <!-- #endregion wrapper -->
     </main>
     <!-- #endregion main -->
-</body>
-
+  </body>
 </html>
