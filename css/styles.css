@@ -38,6 +38,26 @@ svg {
   width: 1px;
 }
 
+.deals-ribbon {
+  background-image: url(../images/deals-ribbon.svg);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background-size: 30%;
+  background-position: top right;
+  visibility: hidden;
+}
+
+.latest__article {
+  display: grid;
+  grid-template-columns: 75px 1fr;
+  grid-gap: 8px;
+  grid-template-areas:
+    "img title"
+    "img author-date";
+}
+
 /* #region big-images */
 .big-images__item {
   height: 30vh;
@@ -244,15 +264,6 @@ svg {
   padding-top: 24px;
 }
 
-.latest__article {
-  display: grid;
-  grid-template-columns: 75px 1fr;
-  grid-gap: 8px;
-  grid-template-areas:
-    "img title"
-    "img author-date";
-}
-
 .latest__article__img {
   width: 75px;
   height: 75px;
@@ -265,35 +276,35 @@ svg {
   display: block;
 }
 
-.latest__article:nth-of-type(1) .latest__article__img {
+.latest-news-article:nth-of-type(1) .latest__article__img {
   background-image: url(../images/TNWDeals.jpg);
 }
 
-.latest__article:nth-of-type(2) .latest__article__img {
+.latest-news-article:nth-of-type(2) .latest__article__img {
   background-image: url(../images/David_Canellis.jpg);
 }
 
-.latest__article:nth-of-type(3) .latest__article__img {
+.latest-news-article:nth-of-type(3) .latest__article__img {
   background-image: url(../images/Yessi_Bello_Perez.jpg);
 }
 
-.latest__article:nth-of-type(4) .latest__article__img {
+.latest-news-article:nth-of-type(4) .latest__article__img {
   background-image: url(../images/UAE.jpg);
 }
 
-.latest__article:nth-of-type(5) .latest__article__img {
+.latest-news-article:nth-of-type(5) .latest__article__img {
   background-image: url(../images/tiktok.png);
 }
 
-.latest__article:nth-of-type(6) .latest__article__img {
+.latest-news-article:nth-of-type(6) .latest__article__img {
   background-image: url(../images/radiohead.jpg);
 }
 
-.latest__article:nth-of-type(7) .latest__article__img {
+.latest-news-article:nth-of-type(7) .latest__article__img {
   background-image: url(../images/Aeon.png);
 }
 
-.latest__article:nth-of-type(8) .latest__article__img {
+.latest-news-article:nth-of-type(8) .latest__article__img {
   background-image: url(../images/Oleb.png);
 }
 
@@ -558,12 +569,67 @@ svg {
 
 /* #endregion categories */
 
+/* #region Latest deals */
+.latest__article__img {
+  position: relative;
+}
+
+.latest-deal-article:nth-of-type(1) .latest__article__img {
+  background-image: url(../images/seo.jpg);
+}
+
+.latest-deal-article:nth-of-type(2) .latest__article__img {
+  background-image: url(../images/tiger.jpg);
+}
+
+.latest-deal-article:nth-of-type(3) .latest__article__img {
+  background-image: url(../images/web.jpg);
+}
+
+.latest-deal-article:nth-of-type(4) .latest__article__img {
+  background-image: url(../images/phone.jpg);
+}
+
+.latest-deal-article:nth-of-type(5) .latest__article__img {
+  background-image: url(../images/tv.jpg);
+}
+
+.latest-deal-article:nth-of-type(6) .latest__article__img {
+  background-image: url(../images/memories.jpg);
+}
+
+.latest-deal-article:nth-of-type(7) .latest__article__img {
+  background-image: url(../images/tools.jpg);
+}
+
+.latest-deal-article:nth-of-type(8) .latest__article__img {
+  background-image: url(../images/database.jpg);
+}
+
+.deal-offer {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  font-size: 0.775rem;
+  font-weight: bold;
+  transform: rotate(45deg);
+}
+
+.latest__article--cross-price {
+  text-decoration: line-through;
+}
+/* #endregion Latest deals */
+
 /* #endregion wrapper */
 
 /* #endregion main */
 
 /* #region media-queries */
 @media only screen and (min-width: 810px) {
+  .deals-ribbon {
+    visibility: visible;
+  }
+
   /* #region nav-bar */
   .visibility {
     display: flex;
@@ -655,7 +721,7 @@ svg {
   /* #region latest-news */
   .latest__article {
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(150px, 1fr) auto;
+    grid-auto-rows: max-content;
     grid-template-areas:
       "img"
       "title"
@@ -664,7 +730,7 @@ svg {
 
   .latest__article__img {
     width: 100%;
-    height: 100%;
+    height: 10rem;
     grid-area: img;
   }
 
@@ -690,14 +756,14 @@ svg {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-  
+
   .category-card {
     display: grid;
     grid-auto-rows: max-content;
   }
 
   .category-card__big-image--size {
-    height: 50vh;
+    height: 20rem;
   }
 
   /* #endregion Categories */
@@ -706,7 +772,6 @@ svg {
 }
 
 @media only screen and (min-width: 1024px) {
- 
   /* #region nav-bar */
   .logo {
     display: none;
@@ -785,7 +850,6 @@ svg {
   /* #endregion categories */
 
   /* #endregion main */
-
 }
 
 /* #endregion media-queries */
