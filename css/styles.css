@@ -427,10 +427,6 @@ svg {
 }
 
 .gear-image {
-  background-image: url(../images/gear.jpg);
-}
-
-.tech-image {
   background-image: url(../images/tech.jpg);
 }
 
@@ -485,35 +481,35 @@ svg {
 }
 
 .category-other-article__image-apps {
-  background: url(../images/ticktok.png) 50% / cover no-repeat;
+  background-image: url(../images/ticktok.png);
 }
 
 .category-other-article__image-gear {
-  background: url(../images/gear1.jpg) 50% / cover no-repeat;
+  background-image: url(../images/gear1.jpg);
 }
 
 .category-other-article__image-tech {
-  background: url(../images/tech1.png) 50% / cover no-repeat;
+  background-image: url(../images/tech1.png);
 }
 
 .category-other-article__image-creative {
-  background: url(../images/creative1.jpg) 50% / cover no-repeat;
+  background-image: url(../images/creative1.jpg);
 }
 
 .category-other-article__image-podium {
-  background: url(../images/podium1.png) 50% / cover no-repeat;
+  background-image: url(../images/podium1.png);
 }
 
 .category-other-article__image-insights {
-  background: url(../images/insights1.jpg) 50% / cover no-repeat;
+  background-image: url(../images/insights1.jpg);
 }
 
 .category-other-article__image-launch {
-  background: url(../images/launch1.jpg) 50% / cover no-repeat;
+  background-image: url(../images/launch1.jpg);
 }
 
 .category-other-article__image-distract {
-  background: url(../images/distract1.jpg) 50% / cover no-repeat;
+  background-image: url(../images/distract1.jpg);
 }
 
 .category-links-list li {
