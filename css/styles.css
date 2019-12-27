@@ -38,6 +38,70 @@ svg {
   width: 1px;
 }
 
+/* #region big-images */
+.big-images__item {
+  height: 30vh;
+  position: relative;
+  color: #fff;
+}
+
+.big-images__item header {
+  position: absolute;
+  padding: 0 10px;
+  bottom: 15px;
+}
+
+.big-images__item header h2 {
+  font-family: "Patua One", cursive;
+  font-size: 20px;
+}
+
+.big-images__item header h5 {
+  font-size: 13px;
+}
+
+.big-images__link {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.big-images__link img {
+  width: 100%;
+  height: 100%;
+}
+
+.big-images__item__list {
+  display: flex;
+  margin-top: 8px;
+  font-size: 12px;
+}
+
+.big-images__item__list li {
+  margin-right: 5px;
+  line-height: 12px;
+}
+
+.big-images__item__list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.big-images__item__list span {
+  position: relative;
+  bottom: 6px;
+}
+
+.big-images__item__list svg {
+  position: relative;
+  bottom: 2px;
+}
+
+.big-images__span {
+  position: static !important;
+}
+/* #endregion big-images */
+
 /* #endregion base */
 
 /* #region nav-bar */
@@ -117,36 +181,9 @@ svg {
   clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 }
 
-.big-images__item {
-  height: 30vh;
-  position: relative;
-  color: #fff;
-}
-
 .main-images__main--date,
 .orange-gradient {
   display: none;
-}
-
-.big-images__item header {
-  position: absolute;
-  padding: 0 10px;
-  bottom: 15px;
-}
-
-.big-images__item header h2 {
-  font-family: "Patua One", cursive;
-  font-size: 20px;
-}
-
-.big-images__item header h5 {
-  font-size: 13px;
-}
-
-.big-images__link {
-  height: 100%;
-  width: 100%;
-  display: block;
 }
 
 .main-images__link--main {
@@ -161,11 +198,6 @@ svg {
   background-image: url(../images/button.png);
 }
 
-.big-images__link img {
-  width: 100%;
-  height: 100%;
-}
-
 .main-images__main {
   grid-area: main;
 }
@@ -178,35 +210,6 @@ svg {
   grid-area: item1;
 }
 
-.big-images__item__list {
-  display: flex;
-  margin-top: 8px;
-  font-size: 12px;
-}
-
-.big-images__item__list li {
-  margin-right: 5px;
-  line-height: 12px;
-}
-
-.big-images__item__list li a {
-  color: white;
-  text-decoration: none;
-}
-
-.big-images__item__list span {
-  position: relative;
-  bottom: 6px;
-}
-
-.big-images__item__list svg {
-  position: relative;
-  bottom: 2px;
-}
-
-.big-images__span {
-  position: static !important;
-}
 /* #endregion main-images */
 
 /* #region wrapper */
@@ -439,6 +442,10 @@ svg {
 }
 
 .gear-image {
+  background-image: url(../images/gear.jpg);
+}
+
+.tech-image {
   background-image: url(../images/tech.jpg);
 }
 
@@ -466,7 +473,6 @@ svg {
   display: grid;
   grid-template-columns: 1fr 96px;
   background-color: #fff4f2;
-  height: 100px;
   margin-top: 2px;
 }
 
@@ -475,6 +481,7 @@ svg {
   font-size: 0.785rem;
   color: #ff4422;
   line-height: 1rem;
+  height: 96px;
 }
 
 .category-other-article__text p {
@@ -683,22 +690,23 @@ svg {
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
   }
-
+  
   .category-card {
     display: grid;
+    grid-auto-rows: max-content;
   }
 
-  .abc {
-    padding-top: 75%;
-    position: relative;
-    width: 100%;
+  .category-card__big-image--size {
+    height: 50vh;
   }
+
   /* #endregion Categories */
 
   /* #endregion main */
 }
 
 @media only screen and (min-width: 1024px) {
+ 
   /* #region nav-bar */
   .logo {
     display: none;
@@ -712,6 +720,8 @@ svg {
   }
 
   /* #endregion nav-bar */
+
+  /* #region main */
 
   /* #region main-images */
   .main-images {
@@ -750,8 +760,6 @@ svg {
 
   /* #endregion main-images */
 
-  /* #region main */
-
   .latest_articles,
   .fundings__deals {
     grid-template-columns: repeat(4, 1fr);
@@ -770,7 +778,14 @@ svg {
 
   /* #endregion fundings */
 
+  /* #region categories */
+  .categories {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  /* #endregion categories */
+
   /* #endregion main */
+
 }
 
 /* #endregion media-queries */
