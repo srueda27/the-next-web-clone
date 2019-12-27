@@ -420,6 +420,41 @@ svg {
     url(../images/apps-image.jpg) 50%/100% 100% no-repeat;
 }
 
+.gear-image {
+  background: linear-gradient(transparent, black),
+    url(../images/gear.jpg) 50%/100% 100% no-repeat;
+}
+
+.tech-image {
+  background: linear-gradient(transparent, black),
+    url(../images/tech.jpg) 50%/100% 100% no-repeat;
+}
+
+.creative-image {
+  background: linear-gradient(transparent, black),
+    url(../images/button.png) 50%/100% 100% no-repeat;
+}
+
+.podium-image {
+  background: linear-gradient(transparent, black),
+    url(../images/podium.jpeg) 50%/100% 100% no-repeat;
+}
+
+.insights-image {
+  background: linear-gradient(transparent, black),
+    url(../images/insights.jpg) 50%/100% 100% no-repeat;
+}
+
+.launch-image {
+  background: linear-gradient(transparent, black),
+    url(../images/launch.jpg) 50%/100% 100% no-repeat;
+}
+
+.distract-image {
+  background: linear-gradient(transparent, black),
+    url(../images/tech1.png) 50%/100% 100% no-repeat;
+}
+
 .category-other-article {
   display: grid;
   grid-template-columns: 1fr 96px;
@@ -448,7 +483,38 @@ svg {
 .category-other-article__image {
   height: 96px;
   width: 96px;
+}
+
+.category-other-article__image-apps {
   background: url(../images/ticktok.png) 50% / cover no-repeat;
+}
+
+.category-other-article__image-gear {
+  background: url(../images/gear1.jpg) 50% / cover no-repeat;
+}
+
+.category-other-article__image-tech {
+  background: url(../images/tech1.png) 50% / cover no-repeat;
+}
+
+.category-other-article__image-creative {
+  background: url(../images/creative1.jpg) 50% / cover no-repeat;
+}
+
+.category-other-article__image-podium {
+  background: url(../images/podium1.png) 50% / cover no-repeat;
+}
+
+.category-other-article__image-insights {
+  background: url(../images/insights1.jpg) 50% / cover no-repeat;
+}
+
+.category-other-article__image-launch {
+  background: url(../images/launch1.jpg) 50% / cover no-repeat;
+}
+
+.category-other-article__image-distract {
+  background: url(../images/distract1.jpg) 50% / cover no-repeat;
 }
 
 .category-links-list li {
