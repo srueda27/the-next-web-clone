@@ -26,6 +26,18 @@ svg {
   top: 0;
 }
 
+.screen-reader {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 /* #endregion base */
 
 /* #region nav-bar */
@@ -663,6 +675,25 @@ svg {
   }
 
   /* #endregion fundings */
+
+  /* #region Categories */
+
+  .categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  .category-card {
+    display: grid;
+  }
+
+  .abc {
+    padding-top: 75%;
+    position: relative;
+    width: 100%;
+  }
+  /* #endregion Categories */
 
   /* #endregion main */
 }
