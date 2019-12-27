@@ -12,6 +12,20 @@ svg {
   height: 16px;
 }
 
+.cover-image--basic {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
+
+.black-gradient {
+  background: linear-gradient(transparent, black);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
 /* #endregion base */
 
 /* #region nav-bar */
@@ -98,7 +112,7 @@ svg {
 }
 
 .main-images__main--date,
-.gradient {
+.orange-gradient {
   display: none;
 }
 
@@ -124,18 +138,15 @@ svg {
 }
 
 .main-images__link--main {
-  background: linear-gradient(transparent, black),
-    url(../images/cuantuum.jpg) 50%/100% 100% no-repeat;
+  background-image: url(../images/cuantuum.jpg);
 }
 
 .main-images__link--item {
-  background: linear-gradient(transparent, black),
-    url(../images/hacker.png) 50%/100% 100% no-repeat;
+  background-image: url(../images/hacker.png);
 }
 
 .main-images__link--item1 {
-  background: linear-gradient(transparent, black),
-    url(../images/button.png) 50%/100% 100% no-repeat;
+  background-image: url(../images/button.png);
 }
 
 .big-images__link img {
@@ -231,9 +242,6 @@ svg {
   width: 75px;
   height: 75px;
   grid-area: img;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 50%;
 }
 
 .latest__article__img a {
@@ -414,45 +422,36 @@ svg {
 /* #endregion fundings */
 
 /* #region categories */
-
 .apps-image {
-  background: linear-gradient(transparent, black),
-    url(../images/apps-image.jpg) 50%/100% 100% no-repeat;
+  background-image: url(../images/apps-image.jpg);
 }
 
 .gear-image {
-  background: linear-gradient(transparent, black),
-    url(../images/gear.jpg) 50%/100% 100% no-repeat;
+  background-image: url(../images/gear.jpg);
 }
 
 .tech-image {
-  background: linear-gradient(transparent, black),
-    url(../images/tech.jpg) 50%/100% 100% no-repeat;
+  background-image: url(../images/tech.jpg);
 }
 
 .creative-image {
-  background: linear-gradient(transparent, black),
-    url(../images/button.png) 50%/100% 100% no-repeat;
+  background-image: url(../images/button.png);
 }
 
 .podium-image {
-  background: linear-gradient(transparent, black),
-    url(../images/podium.jpeg) 50%/100% 100% no-repeat;
+  background-image: url(../images/podium.jpeg);
 }
 
 .insights-image {
-  background: linear-gradient(transparent, black),
-    url(../images/insights.jpg) 50%/100% 100% no-repeat;
+  background-image: url(../images/insights.jpg);
 }
 
 .launch-image {
-  background: linear-gradient(transparent, black),
-    url(../images/launch.jpg) 50%/100% 100% no-repeat;
+  background-image: url(../images/launch.jpg);
 }
 
 .distract-image {
-  background: linear-gradient(transparent, black),
-    url(../images/tech1.png) 50%/100% 100% no-repeat;
+  background-image: url(../images/tech1.png);
 }
 
 .category-other-article {
@@ -698,7 +697,7 @@ svg {
       url(../images/cuantuum.jpg) 50%/100% 100% no-repeat;
   }
 
-  .gradient {
+  .orange-gradient {
     background: url(../images/tnw.svg) 20px 20px/50% no-repeat,
       transparent url(../images/cover_gradient.png) 0/100% 100% no-repeat;
     display: block;
