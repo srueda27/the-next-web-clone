@@ -570,6 +570,10 @@ svg {
 /* #endregion categories */
 
 /* #region Latest deals */
+.latest-deals {
+  margin: 40px 0 15px;
+}
+
 .latest__article__img {
   position: relative;
 }
@@ -623,6 +627,62 @@ svg {
 /* #endregion wrapper */
 
 /* #endregion main */
+
+/* #region footer */
+.main-footer__top {
+  background-color: #131313;
+}
+
+.main-footer__social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__social-links li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 40px 2.5px 10px;
+  background-color: rgb(61, 61, 61);
+  justify-content: center;
+  display: flex;
+}
+
+.main-footer__social-links a {
+  display: flex;
+  align-items: center;
+}
+
+.main-footer__text-links {
+  display: flex;
+  justify-content: center;
+}
+
+.main-footer__text-links li {
+  margin: 10px 5px 40px;
+}
+
+.main-footer__text-links a {
+  text-decoration: none;
+  color: #aaa;
+  font-size: 13px;
+}
+
+.main-footer__bottom {
+  background-color: black;
+  color: #aaa;
+  font-size: 11px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-legal-logos {
+  height: 9px;
+}
+
+/* #endregion footer */
 
 /* #region media-queries */
 @media only screen and (min-width: 810px) {
