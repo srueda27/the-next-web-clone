@@ -8,7 +8,7 @@
 
 ## Live Demo
 
-
+https://srueda27.github.io/the-next-web-clone/
 
 ---
 
